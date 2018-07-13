@@ -1,0 +1,45 @@
+.header{
+  .navbar{
+    z-index: 100;
+  }
+  .navbar-brand{
+    color: $white_color;
+    font-family: $barlow;
+    font-weight: bold;
+    font-size: 24px;
+    .span1{
+      padding: 2px 6px;
+      background-color: #032c9e;
+    }
+  }
+  .navbar-nav{
+    .nav-item .active, .nav-link{
+      color: $white_color;
+      font-family: $barlow;
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    .nav-item .active{
+      position: relative;
+      .over_line{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 2px;
+        display: inline-block;
+        background: $white_color;
+      }
+    }
+  }
+  .social-nav{
+    .nav-link{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}

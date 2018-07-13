@@ -1,0 +1,86 @@
+.carousel_section{
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  top: -65px;
+}
+.home_hero1{
+  width: 100%;
+  height: 100vh;
+  background-color: $blue_color;
+  position: relative;
+  font-family: $barlow;
+  .carousel{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+  }
+  .content1{
+    background-color: white;
+    width: 400px;
+    .title{
+      font-size: 36px;
+    }
+    span {
+      width: 25px;
+      height: 10px;
+      display: inline-block;
+      margin-right: auto;
+      background-color: #000;
+    }
+  }
+  .sub_title{
+    font-size: 78px;
+    font-family: $barlow;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+  }
+  .info{
+    color: $white_color;
+    font-size: 24px;
+  }
+  .mi_btn{
+    margin-top: 30px;
+    display: inline-block;
+    width: fit-content;
+    border: solid 1px $white_color;
+    color: $white_color;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 15px 50px;
+  }
+  .play_btn{
+    position: absolute;
+    margin-left: 20px;
+    display: inline-block;
+    margin-top: 30px;
+    height: 60px;
+    width: 60px;
+    background: #012572;
+    border-radius: 50px;
+
+    div{
+      border-radius: 50px;
+      border: solid 1px $white_color;
+      height: 50px;
+      width: 50px;
+      margin-top: 5px;
+      margin-left: 5px;
+      .play_angle{
+        border-radius: 0;
+        width: 20px;
+        height: 25px;
+        margin-left: 15px;
+        margin-top: 11px;
+        background-color: $white_color;
+        -webkit-clip-path: polygon(0% 0%, 0% 100%, 3% 100%, 2% 2%, 100% 48%, 0 96%, 0 98%, 100% 52%, 98% 48%);
+        clip-path: polygon(0% 0%, 0% 100%, 2% 100%, 2% 2%, 100% 50%, 0 98%, 0 98%, 100% 52%, 98% 48%);
+      }
+    }
+  }
+
+}
